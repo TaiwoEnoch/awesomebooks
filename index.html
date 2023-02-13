@@ -5,30 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awesome Books</title>
+  <script defer src="index.js"></script>
 </head>
 <body>
   <header>
     <h1>Awesome books</h1>
   </header>
+  <section id="books-collection"></section>
   <section>
-    <div>
-      <p>Lorem ipsum</p>
-      <p>Testroo Testyy</p>
-      <button type="button">Remove</button><hr>
-    </div>
-    <div>
-      <p>Second book</p>
-      <p>Testroo Testyy</p>
-      <button type="button">Remove</button><hr>
-    </div>
-  </section>
-  <section>
-    <form action="">
+    <form id="form" action="">
       <div>
-        <input type="text" placeholder="Title" required>
+        <input type="text" id="title-input" placeholder="Title" required>
       </div>
       <div>
-        <input type="text" placeholder="Author">
+        <input type="text" id="author-input" placeholder="Author">
       </div>
       <button type="submit">Add</button>
     </form>
