@@ -1,3 +1,8 @@
 * {
   box-sizing: border-box;
 }
+
+.entry-bg-1 {
+  background-color: yellowgreen;
+  color: #000;
+}
