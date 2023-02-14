@@ -54,15 +54,11 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 awesomwbook <a name="about-project"></a>
 
-> 
-
 **awesomebook** is a simple website that displays a list of books and allows you to add and remove books from that list
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
@@ -77,9 +73,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **Linters was setup to ensure standard coding practices**
-- **Gitignore was used to hide some irrelevant files**
-- **GitHub flow was used for understanding of the reading of the code**
+- **[Allows users to enter book information]**
+- **[Displays the book information entered by the user]**
+- **[allows users to add and remove book entries to and from the list]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,7 +83,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Demo is currently not available](https://github.com/TaiwoEnoch/awesomebooks)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,9 +134,9 @@ giving the command (code .)
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Reggeditt](https://github.com/reggeditt)
+- Twitter: [@tksarso](https://twitter.com/tksarso)
+- LinkedIn: [Tetteh Kodjo-Sarso](https://linkedin.com/in/tetteh-kodjo-sarso-888989125/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,9 +144,8 @@ giving the command (code .)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add live link of the portfolio**
-- [ ] **More styling and accurate responsiveness**
-- [ ] **More UI elements**
+- **[Add live link to the project]**
+- **[transitions and animations]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,7 +153,7 @@ giving the command (code .)
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/TaiwoEnoch/awesomebooks/issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -174,7 +169,7 @@ If you admire this project, please do share with friends
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for this great opportunity of assisting others to grow their software development skills.
+We would like to thank Microverse for this awesome challenge.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -184,6 +179,6 @@ I would like to thank Microverse for this great opportunity of assisting others 
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](../LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
