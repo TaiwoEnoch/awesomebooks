@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.entry-bg-1 {
+  background-color: yellowgreen;
+  color: #000;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to left bottom, rgba(255, 192, 203, 0.471), rgba(0, 0, 255, 0.368), rgba(128, 0, 128, 0.249));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+}
+
+#books-collection {
+  margin-block: 15px;
+  border: 2px solid #000;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.heading-title {
+  font-family: serif;
+  font-size: 35px;
+}
+
+.book-entry {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 8px;
+}
+
+.remove-button {
+  padding: 2px 8px;
+  box-shadow: 3px 3px 2px 2px #000;
+}
+
+.book-entry:nth-child(even) {
+  background-color: white;
+}
+
+.book-entry:nth-child(odd) {
+  background-color: yellowgreen;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+  gap: 2px;
+}
+
+.divide {
+  border: 2px solid #000;
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.form-heading {
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.input-area {
+  padding: 3px 20px 3px 5px;
+  border: 2px solid #000;
+  text-align: start;
+}
+
+::placeholder {
+  color: #000;
+}
+
+.form-button {
+  padding: 1px 4px 1px 4px;
+  box-shadow: 3px 3px 2px 2px #000;
+}
