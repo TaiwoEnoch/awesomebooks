@@ -7,6 +7,7 @@ const collectionData = JSON.parse(window.localStorage.getItem('collectionArray')
 const removeButtons = [];
 
 const renderBooks = (collectionData) => {
+  console.log('rendering books collection data = ', collectionData);
   collectionsSectionEl.innerHTML = '';
   collectionData.forEach((book, index) => {
     const bookEntry = document.createElement('div');
@@ -27,6 +28,7 @@ const renderBooks = (collectionData) => {
 
   const addBook = (book) => {
     collectionData.push(book);
+    console.log(collectionData, 'added book');
     window.localStorage.setItem('collectionArray', JSON.stringify(collectionData));
   };
 
@@ -38,6 +40,7 @@ const renderBooks = (collectionData) => {
     const book = { title: title, author: author, bookID: removeIndex };
     addBook(book);
     renderBooks(collectionData);
+    window.location.reload();
   });
 
   const removeBook = (a) => {
