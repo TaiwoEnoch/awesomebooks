@@ -9,20 +9,24 @@
   <script defer src="index.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Awesome books</h1>
-  </header>
-  <section id="books-collection"></section>
-  <section>
-    <form id="form" action="">
-      <div>
-        <input type="text" id="title-input" placeholder="Title" required autofocus>
-      </div>
-      <div>
-        <input type="text" id="author-input" placeholder="Author">
-      </div>
-      <button type="submit">Add</button>
-    </form>
-  </section>
+  <div class="container">
+    <header>
+      <h1 class="heading-title">All awesome books</h1>
+    </header>
+    <section id="books-collection"></section>
+    <div class="divide"></div>
+    <section>
+      <h4 class="form-heading">Add a new book</h4>
+      <form id="form" action="">
+        <div>
+          <input type="text" id="title-input" class="input-area" placeholder="Title" required autofocus>
+        </div>
+        <div>
+          <input type="text" id="author-input" class="input-area" placeholder="Author">
+        </div>
+        <button type="submit" class="form-button">Add</button>
+      </form>
+    </section>
+  </div>
 </body>
 </html>
