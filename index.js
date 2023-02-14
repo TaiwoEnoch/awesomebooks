@@ -30,19 +30,18 @@ const renderBooks = (collectionData) => {
     window.localStorage.setItem('collectionArray', JSON.stringify(collectionData));
   };
 
-  formEl.addEventListener('submit', (event) => {
-    event.preventDefault();
+  formEl.addEventListener('submit', () => {
     const title = titleInputEl.value;
     const author = authorInputEl.value;
     const removeIndex = collectionData.length;
     const book = { title, author, bookID: removeIndex };
     addBook(book);
     renderBooks(collectionData);
-    window.location.reload();
   });
 
   const removeBook = (a) => {
     collectionData = collectionData.filter((book) => book.bookID !== a);
+    collectionData.forEach((book, index) => { book.bookID = index; });
     renderBooks(collectionData);
     window.localStorage.setItem('collectionArray', JSON.stringify(collectionData));
   };
