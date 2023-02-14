@@ -35,7 +35,7 @@ const renderBooks = (collectionData) => {
     const title = titleInputEl.value;
     const author = authorInputEl.value;
     const removeIndex = collectionData.length;
-    const book = { title, author, bookID: removeIndex };
+    const book = { title: title, author: author, bookID: removeIndex };
     addBook(book);
     renderBooks(collectionData);
   });
@@ -54,5 +54,5 @@ const renderBooks = (collectionData) => {
     });
   });
 };
-
+ 
 renderBooks(collectionData);
