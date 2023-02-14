@@ -2,11 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-.entry-bg-1 {
-  background-color: yellowgreen;
-  color: #000;
+  font-family: cursive;
 }
 
 body {
@@ -44,17 +40,23 @@ body {
   padding: 3px 8px;
 }
 
+.book-info {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #000;
+}
+
 .remove-button {
   padding: 2px 8px;
   box-shadow: 3px 3px 2px 2px #000;
 }
 
 .book-entry:nth-child(even) {
-  background-color: white;
+  background-color: rgba(255, 192, 203, 0.471);
 }
 
 .book-entry:nth-child(odd) {
-  background-color: yellowgreen;
+  background-color: rgba(0, 0, 255, 0.368);
 }
 
 #form {
@@ -92,4 +94,21 @@ body {
 .form-button {
   padding: 1px 4px 1px 4px;
   box-shadow: 3px 3px 2px 2px #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-button::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 255, 0.368);
+  color: white;
+  border-radius: 50%;
+  top: -80%;
+  left: -50%;
+}
+
+.form-button:hover::before {
+  width: 100px;
+  height: 100px;
 }
