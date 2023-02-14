@@ -126,13 +126,13 @@ giving the command (code .)
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Taiwo Enoch**
 
 - GitHub: [@TaiwoEnoch](https://github.com/TaiwoEnoch)
 - Twitter: [@TaiwoEnoch4](https://twitter.com/taiwoenoch4)
 - LinkedIn: [@TaiwoEnoch](https://linkedin.com/in/https://www.linkedin.com/in/taiwo-enoch-b88550222/)
 
-👤 **Author2**
+👤 **Tetteh Kodjo-Sarso**
 
 - GitHub: [@Reggeditt](https://github.com/reggeditt)
 - Twitter: [@tksarso](https://twitter.com/tksarso)
