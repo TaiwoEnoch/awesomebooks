@@ -13,22 +13,18 @@
     <span class="logo">Awesome Books</span>
     </div>
     <nav class="navigation">
-      <span class="nav-link">List</span>
-      <span class="nav-link">Add new</span>
-      <span class="nav-link">Contact</span>
+      <span class="nav-link" id="list-books">List |</span>
+      <span class="nav-link" id="add-new-book">Add new |</span>
+      <span class="nav-link" id="contact">Contact</span>
     </nav>
   </header>
   <main>
-    
-    <div class="container">
-      <header>
+    <div class="container">        
+      <section id="books-collection">
         <h1 class="heading-title">All awesome books</h1>
-      </header>
-      <section id="books-collection"></section>
-      <div class="divide"></div>
-      <section>
-        <h4 class="form-heading">Add a new book</h4>
+      </section>
         <form id="form" action="">
+          <h4 class="form-heading">Add a new book</h4>
           <div>
             <input type="text" id="title-input" class="input-area" placeholder="Title" required autofocus>
           </div>
@@ -37,16 +33,20 @@
           </div>
           <button type="submit" class="form-button">Add</button>
         </form>
-      </section>
-    </di
-    <header>
-      <div class="logo"></div>
-      <nav class="navigation">
-        <span class="nav-link">List</span>
-        <span class="nav-link">Ad </span>
-        <span class="nav-link">List</span>
-      </nav>
-    </header>v>
+        <section class="contact-section" id="contact-section">
+          <h1 class="heading-title">Contact Information</h1>
+          <p class="contact-text">Do you have any questions or you just want to say "Hello"?</p>
+          <address>
+            <ul>
+              <span>you can reach out to us</span>
+              <li>e-mail us: mail@support.com</li>
+              <li>call us: +2334567890</li>
+              <li>Visit our office: Streetname, city, country.</li>
+            </ul>
+          </address>
+        </section>
+    </div>
   </main>
+  <footer></footer>
 </body>
 </html>
