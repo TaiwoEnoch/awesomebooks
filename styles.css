@@ -3,12 +3,21 @@
   margin: 0;
   padding: 0;
   font-family: cursive;
+  color: lightgray;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to left bottom, rgba(255, 192, 203, 0.471), rgba(0, 0, 255, 0.368), rgba(128, 0, 128, 0.249));
+  background: linear-gradient(rgba(0, 0, 0, 0.36), black), url(library.jpg) no-repeat center center/cover;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: none;
 }
 
 .container {
@@ -27,6 +36,7 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  backdrop-filter: blur(5px);
 }
 
 .heading-title {
@@ -43,12 +53,13 @@ body {
 .book-info {
   font-size: 1rem;
   font-weight: 900;
-  color: #000;
+  color: lightgray;
 }
 
 .remove-button {
   padding: 2px 8px;
   box-shadow: 3px 3px 2px 2px #000;
+  color: black;
 }
 
 .book-entry:nth-child(even) {
@@ -96,19 +107,23 @@ body {
   box-shadow: 3px 3px 2px 2px #000;
   position: relative;
   overflow: hidden;
+  color: #000;
 }
 
 .form-button::before {
   content: "";
+  width: 100px;
+  height: 100px;
   position: absolute;
   background: rgba(0, 0, 255, 0.368);
   color: white;
   border-radius: 50%;
   top: -80%;
   left: -50%;
+  transform: scaleX(0);
+  transition: transform 0.5s;
 }
 
 .form-button:hover::before {
-  width: 100px;
-  height: 100px;
+  transform: scaleX(1);
 }
