@@ -62,3 +62,31 @@ formEl.addEventListener('submit', (e) => {
 });
 
 renderBooks(bookCollection.collectionData);
+
+// display the books list when click the button "List"
+const bookList = document.querySelector('.hide');
+const listBtn = document.querySelector('.listBtn');
+const formContainer = document.querySelector('.form-container');
+const contactSection = document.querySelector('.contact-section');
+
+listBtn.addEventListener('click', () => {
+  bookList.style.display = 'block';
+  formContainer.style.display = 'none';
+  contactSection.style.display = 'none';
+});
+
+// display the Add book form  when click the button "Add new"
+const addNewBtn = document.querySelector('.add-new-btn');
+
+addNewBtn.addEventListener('click', () => {
+  formContainer.style.display = 'block';
+  contactSection.style.display = 'none';
+});
+
+// display the  Contact section when click the button "Contact"
+const contactBtn = document.querySelector('.contact');
+
+contactBtn.addEventListener('click', () => {
+  contactSection.style.display = 'block';
+  formContainer.style.display = 'none';
+});

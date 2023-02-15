@@ -13,17 +13,17 @@
     <span class="logo">Awesome Books</span>
     </div>
     <nav class="navigation">
-      <span class="nav-link" id="list-books">List |</span>
-      <span class="nav-link" id="add-new-book">Add new |</span>
-      <span class="nav-link" id="contact">Contact</span>
+      <span class="nav-link listBtn" id="list-books">List |</span>
+      <span class="nav-link add-new-btn" id="add-new-book">Add new |</span>
+      <span class="nav-link contact" id="contact">Contact</span>
     </nav>
   </header>
   <main>
     <div class="container">        
-      <section id="books-collection">
+      <section id="books-collection" class="hide">
         <h1 class="heading-title">All awesome books</h1>
       </section>
-        <form id="form" action="">
+        <form id="form" action="" class="form-container">
           <h4 class="form-heading">Add a new book</h4>
           <div>
             <input type="text" id="title-input" class="input-area" placeholder="Title" required autofocus>
@@ -36,9 +36,9 @@
         <section class="contact-section" id="contact-section">
           <h1 class="heading-title">Contact Information</h1>
           <p class="contact-text">Do you have any questions or you just want to say "Hello"?</p>
+          <span>you can reach out to us</span>
           <address>
             <ul>
-              <span>you can reach out to us</span>
               <li>e-mail us: mail@support.com</li>
               <li>call us: +2334567890</li>
               <li>Visit our office: Streetname, city, country.</li>

@@ -15,11 +15,12 @@ body {
 }
 
 .page-header {
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-color: none;
 }
 
 .logo {
@@ -50,13 +51,28 @@ body {
   transform: scaleX(1);
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+}
+
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 80%;
   width: 100%;
+}
+
+.container > * {
+  position: absolute;
+  top: 100px;
+  left: 10%;
 }
 
 #books-collection {
@@ -101,7 +117,7 @@ body {
 }
 
 #form {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-end;
   text-align: center;
@@ -158,11 +174,18 @@ body {
   transform: scaleX(1);
 }
 
+.contact-section {
+  display: none;
+  flex-direction: column;
+}
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
+  position: fixed;
+  bottom: 0;
 }
 
 footer small {
