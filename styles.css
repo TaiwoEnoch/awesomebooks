@@ -157,3 +157,14 @@ body {
 .form-button:hover::before {
   transform: scaleX(1);
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+footer small {
+  width: 80%;
+}
