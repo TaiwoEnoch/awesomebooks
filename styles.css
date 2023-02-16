@@ -147,6 +147,9 @@ main {
   padding: 3px 20px 3px 5px;
   border: 2px solid #000;
   text-align: start;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 ::placeholder {
