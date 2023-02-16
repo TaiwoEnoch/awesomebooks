@@ -3,10 +3,11 @@
   margin: 0;
   padding: 0;
   font-family: cursive;
-  color: lightgray;
+  color: #fff;
 }
 
 body {
+  overflow: hidden;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -20,13 +21,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: 900;
-  color: white;
+  color: #fff;
 }
 
 .nav-link {
@@ -41,7 +41,7 @@ body {
   bottom: -5px;
   width: 100%;
   height: 2px;
-  background-color: lightgray;
+  background-color: #fff;
   transform: scaleX(0);
   transition: transform 0.5s;
   transform-origin: right;
@@ -60,7 +60,6 @@ main {
 }
 
 .container {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +71,16 @@ main {
 .container > * {
   position: absolute;
   top: 100px;
+}
+
+#books-section {
+  width: 100%;
+  margin: 0 auto;
   left: 10%;
+}
+
+#books-section > * {
+  margin: 0;
 }
 
 #books-collection {
@@ -86,8 +94,10 @@ main {
 }
 
 .heading-title {
+  width: 80%;
   font-family: serif;
   font-size: 35px;
+  text-align: center;
 }
 
 .book-entry {
@@ -99,7 +109,13 @@ main {
 .book-info {
   font-size: 1rem;
   font-weight: 900;
-  color: lightgray;
+  color: #fff;
+}
+
+#set-date {
+  width: 80%;
+  margin: 0 auto;
+  text-align: right;
 }
 
 .remove-button {
@@ -117,28 +133,17 @@ main {
 }
 
 #form {
+  width: 35%;
   display: none;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   text-align: center;
   gap: 2px;
 }
 
-.divide {
-  border: 2px solid #000;
-  border-radius: 50%;
-  width: 100px;
-  margin-bottom: 15px;
-}
-
-.form-heading {
-  text-align: center;
-  padding-bottom: 5px;
-  font-size: 20px;
-  font-family: sans-serif;
-}
-
 .input-area {
+  margin-block: 5px;
+  width: 100%;
   padding: 3px 20px 3px 5px;
   border: 2px solid #000;
   text-align: start;
@@ -151,43 +156,30 @@ main {
 .form-button {
   padding: 1px 4px 1px 4px;
   box-shadow: 3px 3px 2px 2px #000;
-  position: relative;
-  overflow: hidden;
   color: #000;
-}
-
-.form-button::before {
-  content: "";
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  background: rgba(0, 0, 255, 0.368);
-  color: white;
-  border-radius: 50%;
-  top: -80%;
-  left: -50%;
-  transform: scaleX(0);
-  transition: transform 0.5s;
-}
-
-.form-button:hover::before {
-  transform: scaleX(1);
+  align-self: flex-end;
 }
 
 .contact-section {
   display: none;
   flex-direction: column;
+  gap: 20px;
+}
+
+.information {
+  width: 100%;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
   height: 50px;
   position: fixed;
   bottom: 0;
 }
 
 footer small {
+  display: inline-block;
   width: 80%;
+  margin: 0 auto;
+  padding-inline: 10%;
 }

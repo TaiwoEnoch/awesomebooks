@@ -76,7 +76,7 @@ listBtn.addEventListener('click', () => {
 // display the Add book form  when click the button "Add new"
 const addNewBtn = document.querySelector('.add-new-btn');
 addNewBtn.addEventListener('click', () => {
-  formEl.style.display = 'block';
+  formEl.style.display = 'flex';
   contactSection.style.display = 'none';
   bookSectionEl.style.display = 'none';
 });
@@ -84,7 +84,7 @@ addNewBtn.addEventListener('click', () => {
 // display the  Contact section when click the button "Contact"
 const contactBtn = document.querySelector('.contact');
 contactBtn.addEventListener('click', () => {
-  contactSection.style.display = 'block';
+  contactSection.style.display = 'flex';
   formEl.style.display = 'none';
   bookSectionEl.style.display = 'none';
 });
