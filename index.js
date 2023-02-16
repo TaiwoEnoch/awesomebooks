@@ -3,6 +3,7 @@ const authorInputEl = document.getElementById('author-input');
 const formEl = document.getElementById('form');
 const contactSection = document.querySelector('.contact-section');
 const collectionsSectionEl = document.getElementById('books-collection');
+const bookSectionEl = document.getElementById('books-section');
 
 class BookCollection {
   constructor() {
@@ -66,27 +67,24 @@ renderBooks(bookCollection.collectionData);
 
 // display the books list when click the button "List"
 const listBtn = document.querySelector('.listBtn');
-
 listBtn.addEventListener('click', () => {
-  collectionsSectionEl.style.display = 'block';
+  bookSectionEl.style.display = 'block';
   formEl.style.display = 'none';
   contactSection.style.display = 'none';
 });
 
 // display the Add book form  when click the button "Add new"
 const addNewBtn = document.querySelector('.add-new-btn');
-
 addNewBtn.addEventListener('click', () => {
   formEl.style.display = 'block';
   contactSection.style.display = 'none';
-  collectionsSectionEl.style.display = 'none';
+  bookSectionEl.style.display = 'none';
 });
 
 // display the  Contact section when click the button "Contact"
 const contactBtn = document.querySelector('.contact');
-
 contactBtn.addEventListener('click', () => {
   contactSection.style.display = 'block';
   formEl.style.display = 'none';
-  collectionsSectionEl.style.display = 'none';
+  bookSectionEl.style.display = 'none';
 });
