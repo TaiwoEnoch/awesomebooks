@@ -88,3 +88,8 @@ contactBtn.addEventListener('click', () => {
   formEl.style.display = 'none';
   bookSectionEl.style.display = 'none';
 });
+
+setInterval(() => {
+  const currentDate = new Date().toLocaleString();
+  document.getElementById('set-date').innerHTML = currentDate;
+}, 1000);
