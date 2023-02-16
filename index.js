@@ -1,6 +1,7 @@
 const titleInputEl = document.getElementById('title-input');
 const authorInputEl = document.getElementById('author-input');
 const formEl = document.getElementById('form');
+const contactSection = document.querySelector('.contact-section');
 const collectionsSectionEl = document.getElementById('books-collection');
 
 class BookCollection {
@@ -64,14 +65,11 @@ formEl.addEventListener('submit', (e) => {
 renderBooks(bookCollection.collectionData);
 
 // display the books list when click the button "List"
-const bookList = document.querySelector('.hide');
 const listBtn = document.querySelector('.listBtn');
-const formContainer = document.querySelector('.form-container');
-const contactSection = document.querySelector('.contact-section');
 
 listBtn.addEventListener('click', () => {
-  bookList.style.display = 'block';
-  formContainer.style.display = 'none';
+  collectionsSectionEl.style.display = 'block';
+  formEl.style.display = 'none';
   contactSection.style.display = 'none';
 });
 
@@ -79,8 +77,9 @@ listBtn.addEventListener('click', () => {
 const addNewBtn = document.querySelector('.add-new-btn');
 
 addNewBtn.addEventListener('click', () => {
-  formContainer.style.display = 'block';
+  formEl.style.display = 'block';
   contactSection.style.display = 'none';
+  collectionsSectionEl.style.display = 'none';
 });
 
 // display the  Contact section when click the button "Contact"
@@ -88,5 +87,6 @@ const contactBtn = document.querySelector('.contact');
 
 contactBtn.addEventListener('click', () => {
   contactSection.style.display = 'block';
-  formContainer.style.display = 'none';
+  formEl.style.display = 'none';
+  collectionsSectionEl.style.display = 'none';
 });
