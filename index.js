@@ -1,4 +1,6 @@
 import bookCollection from './module/bookCollection.js';
+import renderBooks from './module/renderBook.js';
+import { DateTime } from './luxon.js';
 
 const titleInputEl = document.getElementById('title-input');
 const authorInputEl = document.getElementById('author-input');
@@ -7,30 +9,6 @@ const contactSection = document.querySelector('.contact-section');
 const collectionsSectionEl = document.getElementById('books-collection');
 const bookSectionEl = document.getElementById('books-section');
 
-const renderBooks = (data) => {
-  collectionsSectionEl.innerHTML = '';
-  data.forEach((book, index) => {
-    const bookEntry = document.createElement('div');
-    bookEntry.classList.add('book-entry');
-    const bookInfo = document.createElement('span');
-    bookInfo.classList.add('book-info');
-    bookInfo.textContent = `"${book.title}" by ${book.author}`;
-    bookCollection.removeButtons[index] = document.createElement('button');
-    bookCollection.removeButtons[index].classList.add('remove-button');
-    bookCollection.removeButtons[index].textContent = 'Remove';
-    bookCollection.removeButtons[index].dataset.id = book.bookID;
-    bookEntry.append(bookInfo, bookCollection.removeButtons[index]);
-    collectionsSectionEl.appendChild(bookEntry);
-  });
-
-  bookCollection.removeButtons.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      bookCollection.removeBook(+e.target.dataset.id);
-      renderBooks(bookCollection.collectionData);
-    });
-  });
-};
-
 formEl.addEventListener('submit', (e) => {
   e.preventDefault();
   const title = titleInputEl.value;
@@ -38,13 +16,14 @@ formEl.addEventListener('submit', (e) => {
   const removeIndex = bookCollection.collectionData.length;
   const book = { title, author, bookID: removeIndex };
   bookCollection.addBook(book);
-  renderBooks(bookCollection.collectionData);
+  console.log(bookCollection.collectionData);
+  renderBooks(collectionsSectionEl, bookCollection);
 });
 
-renderBooks(bookCollection.collectionData);
+renderBooks(collectionsSectionEl, bookCollection);
 
 // display the books list when click the button "List"
-const listBtn = document.querySelector('.listBtn');
+const listBtn = document.getElementById('list-books');
 listBtn.addEventListener('click', () => {
   bookSectionEl.style.display = 'block';
   formEl.style.display = 'none';
@@ -68,6 +47,7 @@ contactBtn.addEventListener('click', () => {
 });
 
 setInterval(() => {
-  const currentDate = new Date().toLocaleString();
-  document.getElementById('set-date').innerHTML = currentDate;
+  const now = DateTime.now();
+  const date = now.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
+  document.getElementById('set-date').innerHTML = date;
 }, 1000);

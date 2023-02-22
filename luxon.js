@@ -1,3 +1,4 @@
+/* eslint-disable */
 // these aren't really private, but nor are they really useful to document
 
 /**
@@ -240,6 +241,7 @@ const DATETIME_HUGE_WITH_SECONDS = {
 /*
   This is just a junk drawer, containing anything used across multiple classes.
   Because Luxon is small(ish), this should stay small and we won't worry about splitting
+  // eslint-disable-next-line max-len
   it up into, say, parsingUtil.js and basicUtil.js and so on. But they are divided up by feature area.
 */
 
