@@ -1,33 +1,11 @@
+import bookCollection from './module/bookCollection.js';
+
 const titleInputEl = document.getElementById('title-input');
 const authorInputEl = document.getElementById('author-input');
 const formEl = document.getElementById('form');
 const contactSection = document.querySelector('.contact-section');
 const collectionsSectionEl = document.getElementById('books-collection');
 const bookSectionEl = document.getElementById('books-section');
-
-class BookCollection {
-  constructor() {
-    this.collectionData = JSON.parse(window.localStorage.getItem('collectionArray')) || [];
-    this.removeButtons = [];
-  }
-
-  addBook(book) {
-    this.collectionData.push(book);
-    this.updateStorage();
-  }
-
-  removeBook(id) {
-    this.collectionData = this.collectionData.filter((book) => book.bookID !== id);
-    this.collectionData.forEach((book, index) => { book.bookID = index; });
-    this.updateStorage();
-  }
-
-  updateStorage() {
-    window.localStorage.setItem('collectionArray', JSON.stringify(this.collectionData));
-  }
-}
-
-const bookCollection = new BookCollection();
 
 const renderBooks = (data) => {
   collectionsSectionEl.innerHTML = '';
