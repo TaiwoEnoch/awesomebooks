@@ -141,6 +141,11 @@ main {
   gap: 2px;
 }
 
+#title-input,
+#author-input {
+  color: #000;
+}
+
 .input-area {
   margin-block: 5px;
   width: 100%;
