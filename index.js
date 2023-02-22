@@ -17,6 +17,8 @@ formEl.addEventListener('submit', (e) => {
   const book = { title, author, bookID: removeIndex };
   bookCollection.addBook(book);
   renderBooks(collectionsSectionEl, bookCollection);
+  titleInputEl.value = '';
+  authorInputEl.value = '';
 });
 
 renderBooks(collectionsSectionEl, bookCollection);

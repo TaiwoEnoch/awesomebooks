@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: cursive;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: #fff;
 }
 
@@ -121,7 +121,7 @@ main {
 .remove-button {
   padding: 2px 8px;
   box-shadow: 3px 3px 2px 2px #000;
-  color: black;
+  color: #000;
 }
 
 .book-entry:nth-child(even) {
@@ -144,7 +144,7 @@ main {
 .input-area {
   margin-block: 5px;
   width: 100%;
-  padding: 3px 20px 3px 5px;
+  padding: 5px 20px 5px 5px;
   border: 2px solid #000;
   text-align: start;
 }
