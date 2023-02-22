@@ -16,7 +16,6 @@ formEl.addEventListener('submit', (e) => {
   const removeIndex = bookCollection.collectionData.length;
   const book = { title, author, bookID: removeIndex };
   bookCollection.addBook(book);
-  console.log(bookCollection.collectionData);
   renderBooks(collectionsSectionEl, bookCollection);
 });
 
