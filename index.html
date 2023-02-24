@@ -6,27 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awesome Books</title>
   <link rel="stylesheet" href="styles.css">
-  <script defer src="index.js"></script>
+  <script defer type="module" src="index.js"></script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1 class="heading-title">All awesome books</h1>
-    </header>
-    <section id="books-collection"></section>
-    <div class="divide"></div>
-    <section>
-      <h4 class="form-heading">Add a new book</h4>
-      <form id="form" action="">
-        <div>
-          <input type="text" id="title-input" class="input-area" placeholder="Title" required autofocus>
-        </div>
-        <div>
-          <input type="text" id="author-input" class="input-area" placeholder="Author">
-        </div>
-        <button type="submit" class="form-button">Add</button>
-      </form>
-    </section>
+  <header class="page-header">
+    <span class="logo">Awesome Books</span>
+    <nav class="navigation">
+      <span class="nav-link listBtn" id="list-books">List |</span>
+      <span class="nav-link add-new-btn" id="add-new-book">Add new |</span>
+      <span class="nav-link contact" id="contact">Contact</span>
+    </nav>
+  </header>
+  <div>
+    <p id="set-date"></p>
   </div>
+  <main>
+    <div class="container">        
+      <section id="books-section">
+        <h2 class="heading-title">All awesome books</h2>
+        <div id="books-collection" class="hide"></div>
+      </section>
+        <form id="form" action="" class="form-container">
+          <h2 class="heading-title">Add a new book</h2>
+            <input type="text" id="title-input" class="input-area" placeholder="Title" required autofocus>
+            <input type="text" id="author-input" class="input-area" placeholder="Author">
+          <button type="submit" class="form-button">Add</button>
+        </form>
+        <section class="contact-section" id="contact-section">
+          <h2 class="heading-title information">Contact Information</h2>
+          <p class="contact-text">Do you have any questions or you just want to say "Hello"?<br>you can reach out to us</p>
+          <address>
+            <ul>
+              <li>e-mail us: mail@support.com</li>
+              <li>call us: +2347017656876</li>
+              <li>Visit our office: Streetname, city, country.</li>
+            </ul>
+          </address>
+        </section>
+    </div>
+  </main>
+  <footer>
+    <small>Copyright @2023.</small>
+  </footer>
 </body>
 </html>
