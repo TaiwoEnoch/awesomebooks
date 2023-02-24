@@ -152,6 +152,9 @@ main {
   padding: 5px 20px 5px 5px;
   border: 2px solid #000;
   text-align: start;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 ::placeholder {

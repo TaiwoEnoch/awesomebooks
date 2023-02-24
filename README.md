@@ -179,6 +179,6 @@ We would like to thank Microverse for this awesome challenge.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](../LICENSE.md) licensed.
+This project is [MIT](./LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
