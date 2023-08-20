@@ -115,7 +115,7 @@ using the command(git clone https://github.com/TaiwoEnoch/awesomebooks.git)
 
 To run the project, execute the following command:
 
-cd awesomebooks
+cd awesome books
 
 After switching you can open your code editor by 
 giving the command (code .) 
