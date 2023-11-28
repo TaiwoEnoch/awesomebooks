@@ -1,6 +1,6 @@
 // Function to render the books in the provided collections section element based on the given bookCollection
 const renderBooks = (collectionsSectionEl, bookCollection) => {
-  // Clear the existing content in the collections section element
+  // Clear the existing content in the collections section element and display the updated book collection
   collectionsSectionEl.innerHTML = '';
 
   // Loop through each book in the collectionData array of the bookCollection
