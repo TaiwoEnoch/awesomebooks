@@ -2,7 +2,7 @@
 import bookCollection from './module/bookCollection.js';
 import renderBooks from './module/renderBook.js';
 
-// Import the DateTime class from the Luxon library for date and time handling
+// Import the DateTime class from the Luxon library for accurate date and time handling
 import { DateTime } from './luxon.js';
 
 // Get references to various HTML elements using their IDs or classes
