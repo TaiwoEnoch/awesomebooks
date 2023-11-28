@@ -15,7 +15,7 @@ const bookSectionEl = document.getElementById('books-section');
 
 // Event listener for the form submission to add a new book to the collection
 formEl.addEventListener('submit', (e) => {
-  // Prevent the default form submission behavior
+  // Prevent the form from default submission behavior
   e.preventDefault();
 
   // Retrieve the values of the title and author input fields
