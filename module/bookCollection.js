@@ -1,4 +1,4 @@
-// Class definition for managing a collection of books
+// Class definition for managing a collection of books add through the form to the collectionData array
 class BookCollection {
   // Constructor initializes the collectionData array from local storage or an empty array if no data is stored
   constructor() {
