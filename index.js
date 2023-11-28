@@ -30,7 +30,7 @@ formEl.addEventListener('submit', (e) => {
   bookCollection.addBook(book);
   renderBooks(collectionsSectionEl, bookCollection);
 
-  // Clear the input fields after adding the book
+  // Clear the input fields after adding the book respectfully
   titleInputEl.value = '';
   authorInputEl.value = '';
 });
