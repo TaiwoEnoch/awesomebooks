@@ -55,7 +55,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 awesomwbook <a name="about-project"></a>
 
-**awesomebook** Awesome book is a simple website that displays a list of books and allows you to add and remove books from that list that may be your favorite list book of books you will like to read.
+**awesomebook** Awesome book is a user-friendly simple website that displays a list of books and allows you to add and remove books from that list that may be your favorite list book of books you will like to read.
 
 ## 🛠 Built With <a name="built-with"></a>
 
