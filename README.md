@@ -146,7 +146,8 @@ giving the command (code .)
 ## 🔭 Future Features <a name="future-features"></a>
 
 - **Add a live link to the project**
-- **transitions and animations**
+- **transitions**
+- **animations**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
