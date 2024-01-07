@@ -66,7 +66,7 @@ After you're finished please remove all the comments and instructions!
   <ul>
    <li>HTML</li>
    <li>CSS</li>
-   <li>JAVASCRIPT</li>
+   <li>VANILLA JAVASCRIPT</li>
   </ul>
 </details>
 
